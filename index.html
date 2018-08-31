@@ -112,7 +112,7 @@
       xhr.onreadystatechange = function(){
         if((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304){
           callback(JSON.parse(xhr.responseText))
-          console.log()
+          console.log(xhr.responseText)
         }else {
           console.log('xhr.statusText')
         }
